@@ -4,8 +4,8 @@ Este repositório contém um Web App interativo desenvolvido com **Streamlit** p
 
 ## 👩‍💻 Autora
 
-Maria Eduarda Gomes do NAscimento Silva 
-Projeto da pós-graduação em **Mineração de Dados** – Disciplina: **Cloud Computing**
+Maria Eduarda Gomes do Nascimento Silva 
+Projeto da pós-graduação em **Mineração** **de** **Dados** - Disciplina: **Cloud Computing**
 
 ## 🎯 Objetivo
 
