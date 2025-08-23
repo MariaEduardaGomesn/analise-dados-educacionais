@@ -14,7 +14,7 @@ selecao = st.sidebar.selectbox("Navegue pelo app", secoes)
 if selecao == "Introdução":
     st.markdown("""
     Este é um protótipo de aplicação desenvolvida com **Streamlit** para a disciplina de Cloud Computing na pós-graduação em Mineração de Dados.  
-    O foco do projeto é aplicar técnicas de mineração de dados no contexto da **educaçãondo estado do Espírito Santo **.
+    O foco do projeto é aplicar técnicas de mineração de dados no contexto da **educação do estado do Espírito Santo**.
     """)
     
 elif selecao == "Visualização de Dados":
