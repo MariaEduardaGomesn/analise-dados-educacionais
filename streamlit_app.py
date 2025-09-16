@@ -22,12 +22,12 @@ if selecao == "Introdução":
     - SAEB
     - Dados abertos da SEDU
     """)
-   
+    
 elif selecao == "Visualização de Dados":
     st.write("Em breve, gráficos interativos com dados educacionais serão exibidos aqui.")
 
 elif selecao == "Análise Exploratória":
-    st.write("Esta seção apresentará estatísticas descritivas e insights sobre os dados educacionais.")
+    st.write("Em breve, funcionalidades para análise exploratória de dados serão implementadas.")
 
 elif selecao == "Modelos Preditivos (futuro)":
-    st.write("Aqui serão aplicados modelos para prever indicadores educacionais com base em dados históricos.")
+    st.write("Em breve, modelos preditivos baseados em machine learning serão adicionados.")
