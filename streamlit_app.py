@@ -29,10 +29,9 @@ if selecao == "Introdução":
     st.title("Análise de Dados Educacionais das Escolas Estaduais do Espírito Santo")
     st.subheader("Por: Maria Eduarda Gomes")
 
-    st.markdown("Este projeto tem como objetivo explorar dados educacionais públicos para gerar insights úteis sobre o sistema educacional do Estado do Espírito Santo.")
+    st.markdown("Este projeto tem como objetivo analisar dados públicos relacionados ao rendimento escolar e aos investimentos realizados por meio dos repasses financeiros do Programa Estadual de Gestão Financeira Escolar (PROGEFE) no sistema educacional do Estado do Espírito Santo.")
     st.markdown("""
-    Este é um protótipo de aplicação desenvolvida com **Streamlit** para a disciplina de Cloud Computing na pós-graduação em Mineração de Dados.
-    O foco do projeto é aplicar técnicas de mineração de dados no contexto da **educação do estado do Espírito Santo**.
+    A iniciativa consiste no desenvolvimento de um protótipo de aplicação utilizando Streamlit, como parte da disciplina de Cloud Computing do curso de pós-graduação em Mineração de Dados. O foco está na aplicação de técnicas de mineração de dados para explorar e compreender o contexto educacional capixaba, buscando identificar possíveis correlações entre os investimentos escolares e o desempenho dos alunos.
     """)
 
     st.markdown("### Fontes de dados previstas:")
