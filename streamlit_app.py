@@ -101,9 +101,42 @@ elif selecao == "Visualização de Dados":
     st.pyplot(fig6)
 
 elif selecao == "Análise Exploratória":
-    st.title("Análise Exploratória")
-    st.subheader("Estatísticas Descritivas")
-    st.dataframe(df_repasse.describe())
+    st.title("📊 Análise Exploratória dos Dados")
+    st.subheader("📌 Estatísticas Descritivas das Variáveis")
+
+    # Traduz colunas para exibição (opcional)
+    df_display = df_repasse.rename(columns={
+        "ano": "Ano",
+        "inep_id": "ID INEP",
+        "ibge_id": "ID IBGE",
+        "repasse_total": "Repasse Total (R$)",
+        "aprovacao": "Taxa de Aprovação (%)",
+        "ideb": "IDEB"
+    })
+
+    # Calcula estatísticas descritivas
+    descr = df_display.describe().transpose()
+
+    # Adiciona coeficiente de variação
+    descr["CV (%)"] = (descr["std"] / descr["mean"]) * 100
+    descr = descr.round(2)  # arredonda para melhor visualização
+
+    # Mostra estatísticas em tabela interativa
+    st.dataframe(descr, use_container_width=True)
+
+    # Insights automáticos (exemplo simples)
+    st.markdown("### 🔍 Insights Automáticos")
+    media_ideb = descr.loc["IDEB", "mean"]
+    std_ideb = descr.loc["IDEB", "std"]
+    max_ideb = descr.loc["IDEB", "max"]
+    min_ideb = descr.loc["IDEB", "min"]
+
+    st.markdown(f"""
+    - A média do IDEB é **{media_ideb}**, com desvio padrão de **{std_ideb}**.
+    - O valor mínimo do IDEB é **{min_ideb}** e o máximo é **{max_ideb}**.
+    - A variável com maior variação relativa é **{descr['CV (%)'].idxmax()}** (**{descr['CV (%)'].max():.2f}%**).
+    """)
+
 
 elif selecao == "Modelos Preditivos (futuro)":
     st.title("Modelos Preditivos")
